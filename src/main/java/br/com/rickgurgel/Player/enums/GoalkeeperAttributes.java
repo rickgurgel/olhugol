@@ -13,5 +13,5 @@ public enum GoalkeeperAttributes {
     SAVES_FROM_INSIDE_BOX,
     SAVES_FROM_OUTSIDE_BOX,
     SAVES_CAUGHT,
-    SAVES_PARIED
+    SAVES_PARIED;
 }

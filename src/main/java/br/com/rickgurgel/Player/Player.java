@@ -50,7 +50,6 @@ public class Player {
     }
 
     private void setAttributes() {
-        // Initialize attributes based on the player's RoleType
         switch (roleType) {
             case DEFESA:
                 for (DefenderAttributes defenderAttributes : DefenderAttributes.values()) {
@@ -59,10 +58,9 @@ public class Player {
                 break;
             case GOLEIRO:
                 for (GoalkeeperAttributes goalkeeperAttr : GoalkeeperAttributes.values()) {
-                    attributes.put(AttributeEnum.GOALS,0.0);  // Initialize with default values
+                    attributes.put(AttributeEnum.GOALS,0.0);
                 }
                 break;
-            // Add cases for other RoleTypes if needed
             case MEIO_CAMPO:
                 break;
             case ATAQUE:

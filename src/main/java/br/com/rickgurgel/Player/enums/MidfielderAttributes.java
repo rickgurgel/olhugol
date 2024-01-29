@@ -1,6 +1,5 @@
 package br.com.rickgurgel.Player.enums;
 
-// MidfielderAttributes.java
 public enum MidfielderAttributes {
     ASSISTS(0.0),
     EXPECTED_ASSISTS(0.0),

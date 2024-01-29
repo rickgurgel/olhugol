@@ -2,20 +2,15 @@ package br.com.rickgurgel.Player.enums;
 
 import java.util.EnumSet;
 
-// PlayerAttributes.java
 public class PlayerAttributes {
     private RoleType roleType;
 
-    // Defender Attributes
     private EnumSet<DefenderAttributes> defenderAttributes;
 
-    // Goalkeeper Attributes
     private EnumSet<GoalkeeperAttributes> goalkeeperAttributes;
 
-    // Midfielder Attributes
     private EnumSet<MidfielderAttributes> midfielderAttributes;
 
-    // Attacker Attributes
     private EnumSet<AttackerAttributes> attackerAttributes;
 
     public PlayerAttributes(RoleType roleType) {
@@ -39,7 +34,6 @@ public class PlayerAttributes {
         }
     }
 
-    // Getter methods for specific attribute sets
     public EnumSet<DefenderAttributes> getDefenderAttributes() {
         return defenderAttributes;
     }
@@ -57,10 +51,8 @@ public class PlayerAttributes {
     }
 
     public static void main(String[] args) {
-        // Example: Creating PlayerAttributes for a Defender
         PlayerAttributes defenderAttributes = new PlayerAttributes(RoleType.DEFESA);
 
-        // Accessing Defender-specific attributes
         EnumSet<DefenderAttributes> defenderAttrs = defenderAttributes.getDefenderAttributes();
         System.out.println("Defender Attributes: " + defenderAttrs);
     }
